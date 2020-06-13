@@ -295,7 +295,7 @@ consecutive frames 16,17 and 18
 
 ### FP.6
 
-All combinations of detectors and descriptors were implemented in a loop. Output was collected and formed tables and plotted charts frames against TTC lidar and TTC camera. In <file src="output/performanceEvaluation.xlsx"/> , every graph can be ploted by selecting detectors and descriptors combination from table. Only one combination at a time is observable.
+All combinations of detectors and descriptors were implemented in a loop. Output was collected and formed tables and plotted charts frames against TTC lidar and TTC camera. In [excel sheet](../master/output/performanceEvaluation.xlsx), every graph can be ploted by selecting detectors and descriptors combination from table. Only one combination at a time is observable.
 
 I found the best 3 combinations according to accuracy.
 
