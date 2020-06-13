@@ -256,11 +256,7 @@ Matching of bounding box accroding to the best match using previous and current 
         }
 ### FP.5
 
-The following table shows the TTC lidar calcuation. In frame 3 & 4, I observe some miscalculation according to real situation. Also at the last two frames, the data is surprising compared to real data. 
-
-Here is the corresponding image of second , third, fourth frame.
-
-Last 3 frames visualization is given below.
+The following table shows the TTC lidar calcuation. In frame 3 & 4, I observe some miscalculation according to real situation. Also at the last two frames, the data is surprising compared to real data. Filtering outliers has a great deal of influence on real time lidar computation.
 
 
 | images        | TTC Lidar |
@@ -284,9 +280,22 @@ Last 3 frames visualization is given below.
 | image 17 & 18 | 11.0301   |
 | image 18 & 19 | 8.3201    |
 
+consecutive frames 2,3 and 4
+
+<img src="output/frame02.png" width="700" height="400" />
+<img src="output/frame03.png" width="700" height="400" />
+<img src="output/frame04.png" width="700" height="400" />
+
+consecutive frames 16,17 and 18
+
+<img src="output/frame16.png" width="700" height="400" />
+<img src="output/frame17.png" width="700" height="400" />
+<img src="output/frame18.png" width="700" height="400" />
+
+
 ### FP.6
 
-All combinations of detectors and descriptors were implemented in a loop. Output was collected and formed tables and plotted charts frames against TTC lidar and TTC camera. In src/performanceEvaluation.xlsx, every graph can be ploted by selecting detectors and descriptors combination from table. Only one combination at a time is observable.
+All combinations of detectors and descriptors were implemented in a loop. Output was collected and formed tables and plotted charts frames against TTC lidar and TTC camera. In <file src="output/performanceEvaluation.xlsx"/> , every graph can be ploted by selecting detectors and descriptors combination from table. Only one combination at a time is observable.
 
 I found the best 3 combinations according to accuracy.
 
